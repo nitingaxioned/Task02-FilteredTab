@@ -107,10 +107,16 @@ li {
   Header styling starts here
 =================================*/
 
+header .wrapper{
+  text-align: center;
+  background-color: #2b2e37;
+}
 
-
-
-
+header p{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 0;
+}
 
 /*=================================
   Header styling ends here
