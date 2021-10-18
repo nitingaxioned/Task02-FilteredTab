@@ -100,17 +100,23 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 70%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header .wrapper{
+  text-align: center;
+  background-color: #2b2e37;
+}
 
-
-
-
+header p{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 0;
+}
 
 /*=================================
   Header styling ends here
@@ -120,31 +126,57 @@ li {
   main styling starts here
 =================================*/
 
+h3{
+  font-size: 30px;
+  color: #252525;
+  text-align: center;
+  margin: 50px;
+}
 
+h3::after{
+  content: "";
+  border-bottom: 3px solid #69ad31;
+  width: 10%;
+  transform: translateX(-50%);
+  position: absolute;
+  top : 155px;
+  left: 50%
+}
 
+.filter-btns{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
 
+.filter-btn{
+  background: #cccccc;
+  margin: 7px;
+  padding: 10px 1%;
+  border-radius: 5px;
+}
 
+.selected,
+.filter-btn:hover{ background: #69ad31; }
 
+.img-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.img-list li{
+  width: 30%;
+  margin: 1%;
+}
 
+.hide-me{ display: none; }
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
